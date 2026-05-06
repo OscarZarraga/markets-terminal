@@ -1,0 +1,68 @@
+# Terminal — files that must never be committed.
+# Created by Oscar Zarraga Perez. Copyright (c) 2026 Oscar Zarraga Perez.
+
+# --- secrets ---------------------------------------------------------------
+keys.json
+*.key
+*.pem
+.env
+.env.*
+secrets/
+config.local.*
+
+# --- python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- virtualenvs -----------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- editor / OS noise -----------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- logs / runtime --------------------------------------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# --- caches ----------------------------------------------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- never commit zips of the project itself ------------------------------
+Terminal_Public_Release.zip
+Terminal_for_Email.zip
+*.zip
